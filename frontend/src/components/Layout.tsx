@@ -63,9 +63,9 @@ export function Layout({ children }: { children: ReactNode }) {
         <div className="border-t border-white/10 px-4 py-4 text-[11px] leading-relaxed text-slate-400">
           <p className="flex items-center gap-1.5 text-slate-300">
             <Sparkles className="h-3.5 w-3.5 text-accent-400" />
-            本科毕业设计原型
+            网络运维安全校验原型
           </p>
-          <p className="mt-1.5">只生成与检查配置，不连接、不下发任何真实网络设备。</p>
+          <p className="mt-1.5">生成与校验分离机制，不直接连接生产环境，保障配置安全。</p>
         </div>
       </aside>
 

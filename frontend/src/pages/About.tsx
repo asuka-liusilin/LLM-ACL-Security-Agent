@@ -60,7 +60,7 @@ export function About() {
       <div>
         <h1 className="text-xl font-bold text-navy-900">项目介绍与技术路线</h1>
         <p className="mt-1 text-sm text-slate-600">
-          ACL 配置智能生成与安全校验 Agent 原型 · 本科毕业设计阶段成果
+          ACL 配置智能生成与安全校验 Agent 原型
         </p>
       </div>
 
