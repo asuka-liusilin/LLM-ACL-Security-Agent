@@ -17,7 +17,7 @@ export class ApiError extends Error {
   }
 }
 
-const BASE = 'https://llm-acl-backend.onrender.com'
+const BASE = 'https://llm-acl-backend.onrender.com/api'
 
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   let response: Response
