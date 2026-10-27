@@ -17,7 +17,7 @@ export class ApiError extends Error {
   }
 }
 
-const BASE = '/api'
+const BASE = 'https://llm-acl-backend.onrender.com'
 
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   let response: Response
@@ -27,7 +27,7 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
       ...init,
     })
   } catch {
-    throw new ApiError('无法连接后端服务，请确认 FastAPI 已在 8000 端口启动。')
+    throw new ApiError('无法连接后端服务，请确认 FastAPI 已在 https://llm-acl-backend.onrender.com 启动。')
   }
 
   const text = await response.text()
