@@ -1,0 +1,35 @@
+# === 密钥与本地配置 ===
+.env
+.env.local
+backend/.env
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+backend/.venv/
+.pytest_cache/
+.mypy_cache/
+
+# === Node ===
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.vitest/
+*.tsbuildinfo
+
+# === 编辑器 / 系统 ===
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# === 日志与临时文件 ===
+*.log
+tmp/
+_report.txt
+# vite / vitest 加载 TS 配置时生成的临时文件（正常会自动删除）
+frontend/*.timestamp-*.mjs
+frontend/*.bak
